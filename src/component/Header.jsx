@@ -13,7 +13,7 @@ function Header() {
 
                     </ul>
                     <ul className="flex  justify-center cursor-pointer ">
-                        <li><i className="fa-solid fa-cart-shopping"></i>CART</li>
+                        <NavLink to="/Cart"><i className="fa-solid fa-cart-shopping"></i>CART</NavLink>
                     </ul>
                 </div>
             </div>
