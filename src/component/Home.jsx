@@ -21,11 +21,16 @@ function Home() {
     };
   
   return (
-    <div className=" ">
+    <div className=" bg-blue-300 w-[200px] ml-4">
       <div className="row">
-        <div className="col-3 border">
-          <div>
-            <img className="h-[200px] w-[150px]" src={data?.img} alt=""/>
+        <div className="col-2 border ml-4 ">
+          <div >
+            <img className="h-[200px] w-[150px] pl-4 mt-2 " src={data?.img} alt=""/>
+          </div>
+
+          <div className=" flex justify-between px-2 ">
+          <p className="m-0  "> {data?.brand}</p> 
+          <p className="m-0  ">{data?.model}</p>
           </div>
         </div>
 
