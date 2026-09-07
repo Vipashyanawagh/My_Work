@@ -21,17 +21,28 @@ function Home() {
     };
   
   return (
-    <div className=" bg-blue-300 w-[200px] ml-4">
+    <div className="  w-[200px] ml-4">
       <div className="row">
         <div className="col-2 border ml-4 ">
           <div >
             <img className="h-[200px] w-[150px] pl-4 mt-2 " src={data?.img} alt=""/>
           </div>
-
+          <div>
           <div className=" flex justify-between px-2 ">
-          <p className="m-0  "> {data?.brand}</p> 
-          <p className="m-0  ">{data?.model}</p>
+          <p className="m-0 font-bold "> {data?.brand}</p> 
+          <p className="m-0  font-bold ">{data?.model}</p>
           </div>
+          </div>
+
+          <div className = " ">
+            <p className= "m-0 font-semibold pl-2 ">₹ {data?.price}</p>
+            <p className="m-0 pl-2 text-sm font-semibold text-gray-800 ">{data?.space}</p>
+          </div>
+
+         <div>
+          <button className="bg-blue-400 text-white py-1 px-4 rounded-md hover:bg-blue-500 text-center mt-2 mb-2 ml-6 ">Add To Cart </button>
+         </div>
+
         </div>
 
       </div>
